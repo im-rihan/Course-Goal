@@ -26,7 +26,7 @@ const CourseGoalInput = (props) => {
         <label>Course Goal</label>
         <input type="text" onChange={goalInputHandler} value={enteredValue} />
       </div>
-      <Button type="submit" />
+      <Button type="submit">Add Goal</Button>
     </form>
   );
 };
