@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import "./CourseGoalInput.css";
-import FormControl from "../CourseGoalFormColntrol/FormControl";
+import FormControl from "../CourseGoalFormControl/FormControl";
 import Button from "../UI Buttons/Button";
 const CourseGoalInput = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
@@ -20,6 +20,7 @@ const CourseGoalInput = (props) => {
       return;
     }
     props.onAddGoal(enteredValue);
+    setEnteredValue("");
   };
   return (
     <form onSubmit={formSubmitHandler}>
